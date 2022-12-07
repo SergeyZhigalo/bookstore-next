@@ -1,0 +1,8 @@
+{
+  "apiBooks": [
+    {"id":  1, "title":  "title", "author":  "author", "rating": 5},
+    {"id":  2, "title":  "title", "author":  "author", "rating": 5},
+    {"id":  3, "title":  "title", "author":  "author", "rating": 5},
+    {"id":  4, "title":  "title", "author":  "author", "rating": 5}
+  ]
+}
