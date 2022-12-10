@@ -3,7 +3,7 @@ function Star({ isActive}) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 576 512"
-      fill={isActive ? 'yellow' : 'lightgrey'}
+      fill={isActive ? '#ffcb00' : 'lightgrey'}
       className="star"
       height={20}
       width={20}

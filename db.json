@@ -1,8 +1,20 @@
 {
   "apiBooks": [
-    {"id":  1, "title":  "title", "author":  "author", "rating": 5},
-    {"id":  2, "title":  "title", "author":  "author", "rating": 5},
-    {"id":  3, "title":  "title", "author":  "author", "rating": 5},
-    {"id":  4, "title":  "title", "author":  "author", "rating": 5}
+    {"id":  1, "title":  "Война и мир", "author":  "Лев Толстой", "rating": 5, "isPopular": true},
+    {"id":  2, "title":  "Отцы и дети", "author":  "Иван Тургенев", "rating": 4, "isPopular": false},
+    {"id":  3, "title":  "Чайка", "author":  "Антон Чехов", "rating": 5, "isPopular": true},
+    {"id":  4, "title":  "Двенадцать стульев", "author":  "Илья Ильф и Евгений Петров", "rating": 5, "isPopular": true},
+    {"id":  5, "title":  "Капитанская дочка", "author":  "Александр Пушкин", "rating": 5, "isPopular": true},
+    {"id":  6, "title":  "Мёртвые души", "author":  "Николай Гоголь", "rating": 4, "isPopular": false},
+    {"id":  7, "title":  "Мастер и Маргарита", "author":  "Михаил Булгаков", "rating": 5, "isPopular": true},
+    {"id":  8, "title":  "Три товарища", "author":  "Эрих Мария Ремарк", "rating": 4, "isPopular": false},
+    {"id":  9, "title":  "Горе от ума", "author":  "Александр Сергеевич Пушкин", "rating": 5, "isPopular": true},
+    {"id": 10, "title":  "Евгений Онегин", "author":  "Александр Сергеевич Пушкин", "rating": 5, "isPopular": true},
+    {"id": 11, "title":  "Пиковая дама", "author":  "Александр Сергеевич Пушкин", "rating": 5, "isPopular": true},
+    {"id": 12, "title":  "Маленький принц", "author":  "Антуан де Сент-Экзюпери", "rating": 5, "isPopular": true},
+    {"id": 13, "title":  "Анна Каренина", "author":  "Лев Толстой", "rating": 5, "isPopular": true},
+    {"id": 14, "title":  "Сказка о рыбаке и рыбке", "author":  "Антуан де Сент-Экзюпери", "rating": 5, "isPopular": true},
+    {"id": 15, "title":  "Маленький Лев", "author":  "Антуан де Сент-Экзюпери", "rating": 5, "isPopular": true},
+    {"id": 16, "title":  "Маленький принц", "author":  "Антуан де Сент-Экзюпери", "rating": 5, "isPopular": true}
   ]
 }

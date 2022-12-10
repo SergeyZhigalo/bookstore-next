@@ -3,8 +3,22 @@ import Card from "../components/Card";
 import styles from '../styles/Home.module.sass';
 import Image from "next/image";
 import Button from "../components/Button";
+import {useEffect, useState} from "react";
 
 export default function Home() {
+
+  const [data, setData] = useState()
+
+  async function load() {
+    const response = await fetch('http://localhost:3001/apiBooks?isPopular=true&_limit=10')
+    const data = await response.json()
+    setData(data)
+  }
+
+  useEffect(() => {
+    load()
+  }, []);
+
   return (
     <div>
       <Header />
@@ -20,16 +34,9 @@ export default function Home() {
       </div>
       <div className={styles.popular}>
         <h2>Популярно сейчас</h2>
-        <Card title="Война и мир" author="Лев Толстой" rating={5} />
-        <Card title="The Lord of the Rings" author="J.R.R. Tolkien" rating={4} isPopular={true} />
-        <Card title="Война и мир" author="Лев Толстой" rating={5} />
-        <Card title="The Lord of the Rings" author="J.R.R. Tolkien" rating={4} isPopular={true} />
-        <Card title="Война и мир" author="Лев Толстой" rating={5} />
-        <Card title="The Lord of the Rings" author="J.R.R. Tolkien" rating={4} isPopular={true} />
-        <Card title="Война и мир" author="Лев Толстой" rating={5} />
-        <Card title="The Lord of the Rings" author="J.R.R. Tolkien" rating={4} isPopular={true} />
-        <Card title="Война и мир" author="Лев Толстой" rating={5} />
-        <Card title="The Lord of the Rings" author="J.R.R. Tolkien" rating={4} isPopular={true} />
+        {
+          data && data.map((item, index) => <Card key={index} title={item.title} author={item.author} rating={item.rating} isPopular={item.isPopular} /> )
+        }
       </div>
     </div>
   )
