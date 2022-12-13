@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Rating from "./Rating";
-import {Fire, Heart} from "./Icons";
-import styles from '../styles/Card.module.sass';
 import Button from "./Button";
+import { Fire, Heart } from "./Icons";
+import styles from '../styles/Card.module.sass';
 
-export default function Card({ title, author, rating, isPopular }) {
+export default function Card({ id, title, author, rating, isPopular, addToFavourites, isFavourite, removeFromFavourites }) {
+
   return (
     <div className={styles.card}>
       <div className={styles.image}>
@@ -16,7 +17,10 @@ export default function Card({ title, author, rating, isPopular }) {
       <Rating rating={rating} />
       <div className={styles.buy}>
         <Button children="В корзину" style={styles.button__moreDetail} />
-        <Heart style={styles.like} />
+        <Heart
+          style={isFavourite ? `${styles.like} ${styles.red}` : styles.like}
+          onClick={isFavourite ? ()=>removeFromFavourites(id) : ()=>addToFavourites(id)}
+        />
       </div>
     </div>
   )

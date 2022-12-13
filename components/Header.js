@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SearchInput from "./SearchInput";
-import {BasketShopping, Heart} from "./Icons";
+import { BasketShopping, Heart } from "./Icons";
 import styles from '../styles/Header.module.sass';
 
 export default function Header() {

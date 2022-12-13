@@ -1,4 +1,4 @@
-import {Star} from "./Icons";
+import { Star } from "./Icons";
 import styles from '../styles/Rating.module.sass'
 
 export default function Rating({ rating }) {

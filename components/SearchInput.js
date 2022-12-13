@@ -1,5 +1,5 @@
 import styles from '../styles/SearchInput.module.sass'
-import {SearchGlass} from "./Icons";
+import { SearchGlass } from "./Icons";
 
 export default function SearchInput() {
   return (
